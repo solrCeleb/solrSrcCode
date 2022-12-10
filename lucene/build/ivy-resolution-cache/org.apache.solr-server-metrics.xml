@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.solr"
+		module="server"
+		revision="working@DESKTOP-0THRR58"
+
+		conf="metrics"
+		confs="jetty, servlet, metrics"
+		date="20221210094011"/>
+	<dependencies>
+		<module organisation="io.dropwizard.metrics" name="metrics-graphite">
+			<revision name="4.1.5" status="release" pubdate="20200309125547" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="4">
+				<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="11056" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\ivy-4.1.5.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\ivy-4.1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/4.1.5/metrics-graphite-4.1.5.pom"/>
+				<caller organisation="org.apache.solr" name="server" conf="metrics" rev="4.1.5" rev-constraint-default="4.1.5" rev-constraint-dynamic="4.1.5" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="metrics-graphite" type="bundle" ext="jar" status="no" details="" size="22045" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\bundles\metrics-graphite-4.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/4.1.5/metrics-graphite-4.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-jvm">
+			<revision name="4.1.5" status="release" pubdate="20200309125559" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="3">
+				<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="10510" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\ivy-4.1.5.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\ivy-4.1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/4.1.5/metrics-jvm-4.1.5.pom"/>
+				<caller organisation="org.apache.solr" name="server" conf="metrics" rev="4.1.5" rev-constraint-default="4.1.5" rev-constraint-dynamic="4.1.5" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="metrics-jvm" type="bundle" ext="jar" status="no" details="" size="23913" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\bundles\metrics-jvm-4.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/4.1.5/metrics-jvm-4.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-jmx">
+			<revision name="4.1.5" status="release" pubdate="20200309125812" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="2">
+				<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="10457" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jmx\ivy-4.1.5.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jmx\ivy-4.1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jmx/4.1.5/metrics-jmx-4.1.5.pom"/>
+				<caller organisation="org.apache.solr" name="server" conf="metrics" rev="4.1.5" rev-constraint-default="4.1.5" rev-constraint-dynamic="4.1.5" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="metrics-jmx" type="bundle" ext="jar" status="no" details="" size="20893" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jmx\bundles\metrics-jmx-4.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jmx/4.1.5/metrics-jmx-4.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-jetty9">
+			<revision name="4.1.5" status="release" pubdate="20200309125746" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="1">
+				<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="10938" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jetty9\ivy-4.1.5.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jetty9\ivy-4.1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jetty9/4.1.5/metrics-jetty9-4.1.5.pom"/>
+				<caller organisation="org.apache.solr" name="server" conf="metrics" rev="4.1.5" rev-constraint-default="4.1.5" rev-constraint-dynamic="4.1.5" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="metrics-jetty9" type="bundle" ext="jar" status="no" details="" size="30611" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-jetty9\bundles\metrics-jetty9-4.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jetty9/4.1.5/metrics-jetty9-4.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-core">
+			<revision name="4.1.5" status="release" pubdate="20200309125457" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="0">
+				<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5412" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-core\ivy-4.1.5.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-core\ivy-4.1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/4.1.5/metrics-core-4.1.5.pom"/>
+				<caller organisation="org.apache.solr" name="server" conf="metrics" rev="4.1.5" rev-constraint-default="4.1.5" rev-constraint-dynamic="4.1.5" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="105487" time="0" location="C:\Users\Admin\.ivy2\cache\io.dropwizard.metrics\metrics-core\bundles\metrics-core-4.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/4.1.5/metrics-core-4.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

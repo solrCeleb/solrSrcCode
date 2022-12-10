@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.lucene"
+		module="luke"
+		revision="working@DESKTOP-0THRR58"
+
+		conf="logging"
+		confs="compile, logging"
+		date="20221210094004"/>
+	<dependencies>
+		<module organisation="org.apache.logging.log4j" name="log4j-core">
+			<revision name="2.17.1" status="release" pubdate="20211228050056" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="1">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="55683" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-core\ivy-2.17.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-core\ivy-2.17.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.pom"/>
+				<caller organisation="org.apache.lucene" name="luke" conf="logging" rev="2.17.1" rev-constraint-default="2.17.1" rev-constraint-dynamic="2.17.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="log4j-core" type="jar" ext="jar" status="no" details="" size="1790452" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.17.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api">
+			<revision name="2.17.1" status="release" pubdate="20211228050022" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="45902" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-api\ivy-2.17.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-api\ivy-2.17.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.pom"/>
+				<caller organisation="org.apache.lucene" name="luke" conf="logging" rev="2.17.1" rev-constraint-default="2.17.1" rev-constraint-dynamic="2.17.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="log4j-api" type="jar" ext="jar" status="no" details="" size="301872" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.17.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

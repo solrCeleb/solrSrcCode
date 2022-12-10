@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.solr"
+		module="core"
+		revision="working@DESKTOP-0THRR58"
+
+		conf="test.MiniKdc"
+		confs="test, test.DfsMiniCluster, test.MiniKdc"
+		date="20221210094009"/>
+	<dependencies>
+		<module organisation="org.apache.kerby" name="kerby-kdc">
+			<revision name="1.0.1" status="release" pubdate="20170830154249" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="11">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7026" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-kdc\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-kdc\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-kdc/1.0.1/kerby-kdc-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerby-kdc" type="jar" ext="jar" status="no" details="" size="19124" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-kdc\jars\kerby-kdc-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-kdc/1.0.1/kerby-kdc-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-minikdc">
+			<revision name="3.2.2" status="release" pubdate="20210103174347" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="1">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="74589" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.hadoop\hadoop-minikdc\ivy-3.2.2.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.hadoop\hadoop-minikdc\ivy-3.2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-minikdc/3.2.2/hadoop-minikdc-3.2.2.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="hadoop-minikdc" type="jar" ext="jar" status="no" details="" size="52777" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.hadoop\hadoop-minikdc\jars\hadoop-minikdc-3.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-minikdc/3.2.2/hadoop-minikdc-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-simplekdc">
+			<revision name="1.0.1" status="release" pubdate="20170830154214" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="8">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7180" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-simplekdc\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-simplekdc\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-simplekdc" type="jar" ext="jar" status="no" details="" size="20409" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-simplekdc\jars\kerb-simplekdc-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-admin">
+			<revision name="1.0.1" status="release" pubdate="20170830154155" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="10">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7314" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-admin\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-admin\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-admin" type="jar" ext="jar" status="no" details="" size="80980" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-admin\jars\kerb-admin-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-server">
+			<revision name="1.0.1" status="release" pubdate="20170830154132" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="7">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7286" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-server\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-server\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-server" type="jar" ext="jar" status="no" details="" size="82756" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-server\jars\kerb-server-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-identity">
+			<revision name="1.0.1" status="release" pubdate="20170830154003" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="6">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7180" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-identity\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-identity\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-identity" type="jar" ext="jar" status="no" details="" size="20046" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-identity\jars\kerb-identity-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-client">
+			<revision name="1.0.1" status="release" pubdate="20170830154109" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="3">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7707" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-client\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-client\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-client" type="jar" ext="jar" status="no" details="" size="113017" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-client\jars\kerb-client-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-common">
+			<revision name="1.0.1" status="release" pubdate="20170830153918" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="4">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7342" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-common\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-common\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-common" type="jar" ext="jar" status="no" details="" size="65464" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-common\jars\kerb-common-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerb-crypto">
+			<revision name="1.0.1" status="release" pubdate="20170830153856" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="5">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7177" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-crypto\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-crypto\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerb-crypto" type="jar" ext="jar" status="no" details="" size="116120" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerb-crypto\jars\kerb-crypto-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerby-util">
+			<revision name="1.0.1" status="release" pubdate="20170830153650" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="9">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6919" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-util\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-util\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerby-util" type="jar" ext="jar" status="no" details="" size="40554" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-util\jars\kerby-util-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kerby" name="kerby-config">
+			<revision name="1.0.1" status="release" pubdate="20170830153629" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="2">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7142" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-config\ivy-1.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-config\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="kerby-config" type="jar" ext="jar" status="no" details="" size="30674" time="0" location="C:\Users\Admin\.ivy2\cache\org.apache.kerby\kerby-config\jars\kerby-config-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr4-runtime">
+			<revision name="4.5.1-1" status="release" pubdate="20150821004403" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="0">
+				<license name="The BSD License" url="http://www.antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3532" time="0" location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\ivy-4.5.1-1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\ivy-4.5.1-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom"/>
+				<caller organisation="org.apache.solr" name="core" conf="test.MiniKdc" rev="4.5.1-1" rev-constraint-default="4.5.1-1" rev-constraint-dynamic="4.5.1-1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="antlr4-runtime" type="jar" ext="jar" status="no" details="" size="302034" time="0" location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\jars\antlr4-runtime-4.5.1-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

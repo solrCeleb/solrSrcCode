@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.lucene"
+		module="expressions"
+		revision="working@DESKTOP-0THRR58"
+
+		conf="compile"
+		confs="compile"
+		date="20221210094003"/>
+	<dependencies>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="8.0.1" status="release" pubdate="20200403180359" resolver="public" artresolver="main" homepage="http://asm.ow2.io/" downloaded="false" searched="false" default="false" conf="master" position="2">
+				<license name="BSD-3-Clause" url="https://asm.ow2.io/license.html"/>
+				<metadata-artifact status="no" details="" size="5026" time="0" location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm-commons\ivy-8.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm-commons\ivy-8.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/8.0.1/asm-commons-8.0.1.pom"/>
+				<caller organisation="org.apache.lucene" name="expressions" conf="compile" rev="8.0.1" rev-constraint-default="8.0.1" rev-constraint-dynamic="8.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="71563" time="0" location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm-commons\jars\asm-commons-8.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/8.0.1/asm-commons-8.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="8.0.1" status="release" pubdate="20200403180351" resolver="public" artresolver="main" homepage="http://asm.ow2.io/" downloaded="false" searched="false" default="false" conf="master" position="1">
+				<license name="BSD-3-Clause" url="https://asm.ow2.io/license.html"/>
+				<metadata-artifact status="no" details="" size="4454" time="0" location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm\ivy-8.0.1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm\ivy-8.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/8.0.1/asm-8.0.1.pom"/>
+				<caller organisation="org.apache.lucene" name="expressions" conf="compile" rev="8.0.1" rev-constraint-default="8.0.1" rev-constraint-dynamic="8.0.1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="121772" time="0" location="C:\Users\Admin\.ivy2\cache\org.ow2.asm\asm\jars\asm-8.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/8.0.1/asm-8.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr4-runtime">
+			<revision name="4.5.1-1" status="release" pubdate="20150821004403" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master" position="0">
+				<license name="The BSD License" url="http://www.antlr.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3532" time="0" location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\ivy-4.5.1-1.xml" searched="false" original-local-location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\ivy-4.5.1-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom"/>
+				<caller organisation="org.apache.lucene" name="expressions" conf="compile" rev="4.5.1-1" rev-constraint-default="4.5.1-1" rev-constraint-dynamic="4.5.1-1" callerrev="working@DESKTOP-0THRR58"/>
+				<artifacts>
+					<artifact name="antlr4-runtime" type="jar" ext="jar" status="no" details="" size="302034" time="0" location="C:\Users\Admin\.ivy2\cache\org.antlr\antlr4-runtime\jars\antlr4-runtime-4.5.1-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

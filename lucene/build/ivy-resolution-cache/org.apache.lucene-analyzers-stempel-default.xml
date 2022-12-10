@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.lucene"
+		module="analyzers-stempel"
+		revision="working@DESKTOP-0THRR58"
+
+		conf="default"
+		confs="default"
+		date="20221210094001"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>
