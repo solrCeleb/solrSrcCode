@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.dropwizard.metrics"
+		module="metrics-bom"
+		revision="4.1.5"
+		status="release"
+		publication="20200309125419"
+	>
+		<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html" />
+		<description homepage="">
+		Bill of Materials for Metrics
+		</description>
+		<m:properties__slf4j.version>1.7.30</m:properties__slf4j.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__assertj.version>3.15.0</m:properties__assertj.version>
+		<m:properties__maven-compiler-plugin.version>3.8.1</m:properties__maven-compiler-plugin.version>
+		<m:properties__mockito.version>3.3.0</m:properties__mockito.version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:maven.plugins>org.apache.felix__maven-bundle-plugin__4.2.1|org.apache.maven.plugins__maven-surefire-plugin__2.22.2|org.apache.maven.plugins__maven-source-plugin__3.2.1|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-dependency-plugin__3.1.1|org.apache.maven.plugins__maven-javadoc-plugin__3.1.1|org.apache.maven.plugins__maven-release-plugin__2.5.3|org.apache.maven.plugins__maven-jar-plugin__3.2.0|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|org.apache.maven.plugins__maven-site-plugin__3.8.2|org.apache.maven.plugins__maven-project-info-reports-plugin__3.0.0|org.apache.maven.plugins__maven-compiler-plugin__3.8.1|org.apache.felix__maven-bundle-plugin__4.2.1|org.apache.maven.plugins__maven-surefire-plugin__2.22.2|org.apache.maven.plugins__maven-source-plugin__3.2.1|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-dependency-plugin__3.1.1|org.apache.maven.plugins__maven-javadoc-plugin__3.1.1|org.apache.maven.plugins__maven-release-plugin__2.5.3|org.apache.maven.plugins__maven-jar-plugin__3.2.0|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|org.apache.maven.plugins__maven-site-plugin__3.8.2|org.apache.maven.plugins__maven-project-info-reports-plugin__3.0.0|org.apache.maven.plugins__maven-compiler-plugin__3.8.1</m:maven.plugins>
+		<m:dependency.management__io.dropwizard.metrics__metrics-annotation__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-annotation__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-core__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-core__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-collectd__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-collectd__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-ehcache__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-ehcache__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-graphite__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-graphite__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-healthchecks__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-healthchecks__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-httpclient__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-httpclient__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-httpasyncclient__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-httpasyncclient__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jcache__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jcache__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jdbi__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jdbi__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jdbi3__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jdbi3__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jersey2__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jersey2__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jetty9__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jetty9__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jmx__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jmx__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-json__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-json__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-jvm__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-jvm__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-log4j2__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-log4j2__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-logback__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-logback__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-servlet__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-servlet__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-servlets__version>4.1.5</m:dependency.management__io.dropwizard.metrics__metrics-servlets__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.30" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.assertj" name="assertj-core" rev="3.15.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.mockito" name="mockito-core" rev="3.3.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.30" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="io.dropwizard.metrics" module="metrics-annotation" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-core" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-collectd" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-ehcache" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-graphite" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-healthchecks" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-httpclient" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-httpasyncclient" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jcache" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jdbi" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jdbi3" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jersey2" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jetty9" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jmx" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-json" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-jvm" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-log4j2" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-logback" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-servlet" matcher="exact" rev="4.1.5"/>
+		<override org="io.dropwizard.metrics" module="metrics-servlets" matcher="exact" rev="4.1.5"/>
+	</dependencies>
+</ivy-module>

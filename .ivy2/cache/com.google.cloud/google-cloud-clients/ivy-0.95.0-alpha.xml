@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="com.google.cloud"
+		module="google-cloud-clients"
+		revision="0.95.0-alpha"
+		status="release"
+		publication="20190607031556"
+	>
+		<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="https://github.com/googleapis/google-cloud-java/tree/master/google-cloud-clients">
+		Java idiomatic client for Google Cloud Platform services.
+		</description>
+		<m:properties__objenesis.version>2.6</m:properties__objenesis.version>
+		<m:properties__guava.version>27.1-android</m:properties__guava.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__api.common.java.version>1.8.1</m:properties__api.common.java.version>
+		<m:properties__http-client-bom.version>1.29.2</m:properties__http-client-bom.version>
+		<m:properties__easymock.version>3.6</m:properties__easymock.version>
+		<m:properties__google.auth.version>0.15.0</m:properties__google.auth.version>
+		<m:properties__api-client.version>1.29.2</m:properties__api-client.version>
+		<m:properties__apache.httpclient.version>4.5.5</m:properties__apache.httpclient.version>
+		<m:properties__protobuf.version>3.7.1</m:properties__protobuf.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__bom.version>0.95.0-alpha</m:properties__bom.version>
+		<m:properties__oauth-client.version>1.29.2</m:properties__oauth-client.version>
+		<m:properties__grpc.version>1.21.0</m:properties__grpc.version>
+		<m:properties__site.installationModule>google-cloud-clients</m:properties__site.installationModule>
+		<m:properties__project.javadoc.protobufBaseURL>https://googleapis.github.io/google-cloud-java/google-api-grpc/apidocs</m:properties__project.javadoc.protobufBaseURL>
+		<m:properties__github.global.server>github</m:properties__github.global.server>
+		<m:properties__gax.version>1.45.0</m:properties__gax.version>
+		<m:properties__opencensus.version>0.21.0</m:properties__opencensus.version>
+		<m:dependency.management__com.google.api__api-common__version>1.8.1</m:dependency.management__com.google.api__api-common__version>
+		<m:dependency.management__com.google.api__gax__version>1.45.0</m:dependency.management__com.google.api__gax__version>
+		<m:dependency.management__com.google.api__gax-grpc__version>1.45.0</m:dependency.management__com.google.api__gax-grpc__version>
+		<m:dependency.management__com.google.api__gax-httpjson__version>0.62.0</m:dependency.management__com.google.api__gax-httpjson__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-common-protos__version>1.16.0</m:dependency.management__com.google.api.grpc__proto-google-common-protos__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-common-protos__version>1.16.0</m:dependency.management__com.google.api.grpc__grpc-google-common-protos__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-iam-v1__version>0.12.0</m:dependency.management__com.google.api.grpc__proto-google-iam-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-iam-v1__version>0.12.0</m:dependency.management__com.google.api.grpc__grpc-google-iam-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-asset__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-asset__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-asset-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-asset-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-asset-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-asset-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-asset-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-asset-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-asset-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-asset-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-automl__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-automl__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-automl-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-automl-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-automl-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-automl-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-bigtable__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-bigtable__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-bigtable-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-bigtable-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigtable-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigtable-v2__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-bigtable-admin-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-bigtable-admin-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigtable-admin-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigtable-admin-v2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-bigtable-emulator__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-bigtable-emulator__version>
+		<m:dependency.management__com.google.cloud__google-cloud-bigquery__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-bigquery__version>
+		<m:dependency.management__com.google.cloud__google-cloud-bigquerydatatransfer__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-bigquerydatatransfer__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-bigquerydatatransfer-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-bigquerydatatransfer-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigquerydatatransfer-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigquerydatatransfer-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-bigquerystorage-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-bigquerystorage-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigquerystorage-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-bigquerystorage-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-compute__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-compute__version>
+		<m:dependency.management__com.google.cloud__google-cloud-container__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-container__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-container-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-container-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-container-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-container-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-containeranalysis__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-containeranalysis__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-containeranalysis-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-containeranalysis-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-containeranalysis-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-containeranalysis-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-containeranalysis-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-containeranalysis-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-containeranalysis-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-containeranalysis-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-contrib__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-contrib__version>
+		<m:dependency.management__com.google.cloud__google-cloud-nio__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-nio__version>
+		<m:dependency.management__com.google.cloud__google-cloud-core__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-core__version>
+		<m:dependency.management__com.google.cloud__google-cloud-core-grpc__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-core-grpc__version>
+		<m:dependency.management__com.google.cloud__google-cloud-core-http__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-core-http__version>
+		<m:dependency.management__com.google.cloud__google-cloud-datacatalog__version>0.8.0-alpha</m:dependency.management__com.google.cloud__google-cloud-datacatalog__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-datacatalog-v1beta1__version>0.8.0-alpha</m:dependency.management__com.google.api.grpc__proto-google-cloud-datacatalog-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-datacatalog-v1beta1__version>0.8.0-alpha</m:dependency.management__com.google.api.grpc__grpc-google-cloud-datacatalog-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-datalabeling__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-datalabeling__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-datalabeling-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-datalabeling-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-datalabeling-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-datalabeling-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-dataproc__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-dataproc__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-dataproc-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-dataproc-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-dataproc-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-dataproc-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-dataproc-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-dataproc-v1beta2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-dataproc-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-dataproc-v1beta2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-datastore__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-datastore__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-datastore-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-datastore-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-dlp__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-dlp__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-dlp-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-dlp-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-dlp-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-dlp-v2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-dialogflow__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-dialogflow__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-dialogflow-v2beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-dialogflow-v2beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-dialogflow-v2beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-dialogflow-v2beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-dialogflow-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-dialogflow-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-dialogflow-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-dialogflow-v2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-dns__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-dns__version>
+		<m:dependency.management__com.google.cloud__google-cloud-errorreporting__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-errorreporting__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-error-reporting-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-error-reporting-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-error-reporting-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-error-reporting-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-firestore__version>1.7.0</m:dependency.management__com.google.cloud__google-cloud-firestore__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-admin-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-admin-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-firestore-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-admin-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-admin-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-firestore-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-kms__version>1.13.0</m:dependency.management__com.google.cloud__google-cloud-kms__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-kms-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-kms-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-kms-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-kms-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-language__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-language__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-language-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-language-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-language-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-language-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-language-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-language-v1beta2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-language-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-language-v1beta2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-logging__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-logging__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-logging-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-logging-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-logging-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-logging-v2__version>
+		<m:dependency.management__com.google.cloud__google-cloud-logging-logback__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-logging-logback__version>
+		<m:dependency.management__com.google.cloud__google-cloud-monitoring__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-monitoring__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-monitoring-v3__version>1.59.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-monitoring-v3__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-monitoring-v3__version>1.59.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-monitoring-v3__version>
+		<m:dependency.management__com.google.cloud__google-cloud-os-login__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-os-login__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-os-login-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-os-login-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-os-login-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-os-login-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-pubsub__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-pubsub__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-pubsub-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-pubsub-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-pubsub-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-pubsub-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-redis__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-redis__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-redis-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-redis-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-redis-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-redis-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-redis-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-redis-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-redis-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-redis-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-resourcemanager__version>0.95.0-alpha</m:dependency.management__com.google.cloud__google-cloud-resourcemanager__version>
+		<m:dependency.management__com.google.cloud__google-cloud-scheduler__version>1.0.0</m:dependency.management__com.google.cloud__google-cloud-scheduler__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-scheduler-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-scheduler-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-scheduler-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-scheduler-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-securitycenter__version>0.95.0</m:dependency.management__com.google.cloud__google-cloud-securitycenter__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-scheduler-v1__version>1.0.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-scheduler-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-scheduler-v1__version>1.0.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-scheduler-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-securitycenter-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-securitycenter-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-securitycenter-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-securitycenter-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-securitycenter-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-securitycenter-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-securitycenter-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-securitycenter-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-spanner__version>1.22.0</m:dependency.management__com.google.cloud__google-cloud-spanner__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-admin-database-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-admin-database-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-admin-database-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-admin-database-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-admin-instance-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-spanner-admin-instance-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-admin-instance-v1__version>1.22.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-spanner-admin-instance-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-speech__version>1.7.0</m:dependency.management__com.google.cloud__google-cloud-speech__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-speech-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1__version>1.7.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-speech-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-storage__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-storage__version>
+		<m:dependency.management__com.google.cloud__google-cloud-tasks__version>1.4.0</m:dependency.management__com.google.cloud__google-cloud-tasks__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2__version>1.4.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2__version>1.4.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2beta2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2beta2__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2beta3__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-tasks-v2beta3__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2beta3__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-tasks-v2beta3__version>
+		<m:dependency.management__com.google.cloud__google-cloud-texttospeech__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-texttospeech__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-texttospeech-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-texttospeech-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-texttospeech-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-texttospeech-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-texttospeech-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-texttospeech-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-texttospeech-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-texttospeech-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-trace__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-trace__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-trace-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-trace-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-trace-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-trace-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-trace-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-trace-v2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-trace-v2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-trace-v2__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-translate-v3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-translate-v3beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-translate-v3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-translate-v3beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-translate__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-translate__version>
+		<m:dependency.management__com.google.cloud__google-cloud-vision__version>1.77.0</m:dependency.management__com.google.cloud__google-cloud-vision__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1__version>1.59.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p2beta1__version>1.59.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p2beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p2beta1__version>1.59.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p2beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p3beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p3beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p4beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-vision-v1p4beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p4beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-vision-v1p4beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-video-intelligence__version>0.95.0-beta</m:dependency.management__com.google.cloud__google-cloud-video-intelligence__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1beta2__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1beta2__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1beta2__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p1beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p1beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p2beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p2beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p2beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p2beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-video-intelligence-v1p3beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p3beta1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-video-intelligence-v1p3beta1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-iot-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-iot-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-iot-v1__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-iot-v1__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-websecurityscanner-v1alpha__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-websecurityscanner-v1alpha__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-websecurityscanner-v1alpha__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-websecurityscanner-v1alpha__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-websecurityscanner-v1beta__version>0.60.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-websecurityscanner-v1beta__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-websecurityscanner-v1beta__version>0.60.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-websecurityscanner-v1beta__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-iamcredentials-v1__version>0.22.0-alpha</m:dependency.management__com.google.api.grpc__proto-google-cloud-iamcredentials-v1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-iamcredentials-v1__version>0.22.0-alpha</m:dependency.management__com.google.api.grpc__grpc-google-cloud-iamcredentials-v1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-iamcredentials__version>0.22.0-alpha</m:dependency.management__com.google.cloud__google-cloud-iamcredentials__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-talent-v4beta1__version>0.12.0-beta</m:dependency.management__com.google.api.grpc__proto-google-cloud-talent-v4beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-talent-v4beta1__version>0.12.0-beta</m:dependency.management__com.google.api.grpc__grpc-google-cloud-talent-v4beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-talent__version>0.12.0-beta</m:dependency.management__com.google.cloud__google-cloud-talent__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-webrisk-v1beta1__version>0.10.0-alpha</m:dependency.management__com.google.api.grpc__proto-google-cloud-webrisk-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-webrisk-v1beta1__version>0.10.0-alpha</m:dependency.management__com.google.api.grpc__grpc-google-cloud-webrisk-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-webrisk__version>0.10.0-alpha</m:dependency.management__com.google.cloud__google-cloud-webrisk__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-phishingprotection-v1beta1__version>0.6.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-phishingprotection-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-phishingprotection-v1beta1__version>0.6.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-phishingprotection-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-phishingprotection__version>0.6.0</m:dependency.management__com.google.cloud__google-cloud-phishingprotection__version>
+		<m:dependency.management__com.google.api.grpc__proto-google-cloud-recaptchaenterprise-v1beta1__version>0.6.0</m:dependency.management__com.google.api.grpc__proto-google-cloud-recaptchaenterprise-v1beta1__version>
+		<m:dependency.management__com.google.api.grpc__grpc-google-cloud-recaptchaenterprise-v1beta1__version>0.6.0</m:dependency.management__com.google.api.grpc__grpc-google-cloud-recaptchaenterprise-v1beta1__version>
+		<m:dependency.management__com.google.cloud__google-cloud-recaptchaenterprise__version>0.6.0</m:dependency.management__com.google.cloud__google-cloud-recaptchaenterprise__version>
+		<m:dependency.management__com.google.http-client__google-http-client__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client__version>
+		<m:dependency.management__com.google.http-client__google-http-client-android__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-android__version>
+		<m:dependency.management__com.google.http-client__google-http-client-apache__version>2.1.2</m:dependency.management__com.google.http-client__google-http-client-apache__version>
+		<m:dependency.management__com.google.http-client__google-http-client-appengine__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-appengine__version>
+		<m:dependency.management__com.google.http-client__google-http-client-findbugs__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-findbugs__version>
+		<m:dependency.management__com.google.http-client__google-http-client-gson__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-gson__version>
+		<m:dependency.management__com.google.http-client__google-http-client-jackson__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-jackson__version>
+		<m:dependency.management__com.google.http-client__google-http-client-jackson2__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-jackson2__version>
+		<m:dependency.management__com.google.http-client__google-http-client-protobuf__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-protobuf__version>
+		<m:dependency.management__com.google.http-client__google-http-client-test__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-test__version>
+		<m:dependency.management__com.google.http-client__google-http-client-xml__version>1.29.2</m:dependency.management__com.google.http-client__google-http-client-xml__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client-appengine__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client-appengine__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client-assembly__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client-assembly__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client-java6__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client-java6__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client-jetty__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client-jetty__version>
+		<m:dependency.management__com.google.oauth-client__google-oauth-client-servlet__version>1.29.2</m:dependency.management__com.google.oauth-client__google-oauth-client-servlet__version>
+		<m:dependency.management__com.google.api-client__google-api-client__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client__version>
+		<m:dependency.management__com.google.api-client__google-api-client-android__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-android__version>
+		<m:dependency.management__com.google.api-client__google-api-client-appengine__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-appengine__version>
+		<m:dependency.management__com.google.api-client__google-api-client-assembly__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-assembly__version>
+		<m:dependency.management__com.google.api-client__google-api-client-gson__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-gson__version>
+		<m:dependency.management__com.google.api-client__google-api-client-jackson2__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-jackson2__version>
+		<m:dependency.management__com.google.api-client__google-api-client-java6__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-java6__version>
+		<m:dependency.management__com.google.api-client__google-api-client-protobuf__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-protobuf__version>
+		<m:dependency.management__com.google.api-client__google-api-client-servlet__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-servlet__version>
+		<m:dependency.management__com.google.api-client__google-api-client-xml__version>1.29.2</m:dependency.management__com.google.api-client__google-api-client-xml__version>
+		<m:dependency.management__com.google.apis__google-api-services-bigquery__version>v2-rev20190423-1.28.0</m:dependency.management__com.google.apis__google-api-services-bigquery__version>
+		<m:dependency.management__com.google.apis__google-api-services-compute__version>v1-rev20190403-1.28.0</m:dependency.management__com.google.apis__google-api-services-compute__version>
+		<m:dependency.management__com.google.cloud.datastore__datastore-v1-proto-client__version>1.6.0</m:dependency.management__com.google.cloud.datastore__datastore-v1-proto-client__version>
+		<m:dependency.management__com.google.apis__google-api-services-dns__version>v1-rev20190418-1.28.0</m:dependency.management__com.google.apis__google-api-services-dns__version>
+		<m:dependency.management__org.codehaus.mojo__animal-sniffer-annotations__version>1.18</m:dependency.management__org.codehaus.mojo__animal-sniffer-annotations__version>
+		<m:dependency.management__commons-fileupload__commons-fileupload__version>1.4</m:dependency.management__commons-fileupload__commons-fileupload__version>
+		<m:dependency.management__com.google.apis__google-api-services-cloudresourcemanager__version>v1-rev20190513-1.28.0</m:dependency.management__com.google.apis__google-api-services-cloudresourcemanager__version>
+		<m:dependency.management__com.google.apis__google-api-services-storage__version>v1-rev20190426-1.28.0</m:dependency.management__com.google.apis__google-api-services-storage__version>
+		<m:dependency.management__com.google.apis__google-api-services-translate__version>v2-rev20170525-1.28.0</m:dependency.management__com.google.apis__google-api-services-translate__version>
+		<m:dependency.management__org.json__json__version>20160810</m:dependency.management__org.json__json__version>
+		<m:dependency.management__io.grpc__grpc-core__version>1.21.0</m:dependency.management__io.grpc__grpc-core__version>
+		<m:dependency.management__io.grpc__grpc-netty__version>1.21.0</m:dependency.management__io.grpc__grpc-netty__version>
+		<m:dependency.management__io.grpc__grpc-netty-shaded__version>1.21.0</m:dependency.management__io.grpc__grpc-netty-shaded__version>
+		<m:dependency.management__io.grpc__grpc-stub__version>1.21.0</m:dependency.management__io.grpc__grpc-stub__version>
+		<m:dependency.management__io.grpc__grpc-auth__version>1.21.0</m:dependency.management__io.grpc__grpc-auth__version>
+		<m:dependency.management__io.grpc__grpc-protobuf__version>1.21.0</m:dependency.management__io.grpc__grpc-protobuf__version>
+		<m:dependency.management__io.grpc__grpc-context__version>1.21.0</m:dependency.management__io.grpc__grpc-context__version>
+		<m:dependency.management__io.grpc__grpc-testing__version>1.21.0</m:dependency.management__io.grpc__grpc-testing__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:dependency.management__com.google.protobuf__protobuf-java__version>3.7.1</m:dependency.management__com.google.protobuf__protobuf-java__version>
+		<m:dependency.management__com.google.protobuf__protobuf-java-util__version>3.7.1</m:dependency.management__com.google.protobuf__protobuf-java-util__version>
+		<m:dependency.management__com.google.guava__guava__version>27.1-android</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.google.auto.value__auto-value__version>1.4</m:dependency.management__com.google.auto.value__auto-value__version>
+		<m:dependency.management__com.google.auth__google-auth-library-credentials__version>0.15.0</m:dependency.management__com.google.auth__google-auth-library-credentials__version>
+		<m:dependency.management__com.google.auth__google-auth-library-oauth2-http__version>0.15.0</m:dependency.management__com.google.auth__google-auth-library-oauth2-http__version>
+		<m:dependency.management__io.opencensus__opencensus-api__version>0.21.0</m:dependency.management__io.opencensus__opencensus-api__version>
+		<m:dependency.management__io.opencensus__opencensus-contrib-grpc-util__version>0.21.0</m:dependency.management__io.opencensus__opencensus-contrib-grpc-util__version>
+		<m:dependency.management__io.opencensus__opencensus-contrib-http-util__version>0.21.0</m:dependency.management__io.opencensus__opencensus-contrib-http-util__version>
+		<m:dependency.management__com.google.guava__guava-testlib__version>27.1-android</m:dependency.management__com.google.guava__guava-testlib__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__version>1.3</m:dependency.management__org.hamcrest__hamcrest-core__version>
+		<m:dependency.management__com.google.errorprone__error_prone_annotations__version>2.3.3</m:dependency.management__com.google.errorprone__error_prone_annotations__version>
+		<m:dependency.management__org.easymock__easymock__version>3.6</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__org.easymock__easymock__exclusion_0>org.objenesis__objenesis</m:dependency.management__org.easymock__easymock__exclusion_0>
+		<m:dependency.management__org.objenesis__objenesis__version>2.6</m:dependency.management__org.objenesis__objenesis__version>
+		<m:dependency.management__org.mockito__mockito-all__version>1.9.5</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__com.google.truth__truth__version>0.45</m:dependency.management__com.google.truth__truth__version>
+		<m:dependency.management__org.checkerframework__checker-compat-qual__version>2.5.5</m:dependency.management__org.checkerframework__checker-compat-qual__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M3|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M2|org.codehaus.mojo__exec-maven-plugin__1.6.0|org.apache.maven.plugins__maven-failsafe-plugin__3.0.0-M3|null__maven-jar-plugin__3.1.0|null__maven-compiler-plugin__3.7.0|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.eluder.coveralls__coveralls-maven-plugin__4.3.0|org.codehaus.mojo__cobertura-maven-plugin__2.7|org.apache.maven.plugins__maven-site-plugin__3.7.1|org.jacoco__jacoco-maven-plugin__0.8.4|org.apache.maven.plugins__maven-checkstyle-plugin__3.0.0</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="javax.annotation" name="javax.annotation-api" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<override org="com.google.api" module="api-common" matcher="exact" rev="1.8.1"/>
+		<override org="com.google.api" module="gax" matcher="exact" rev="1.45.0"/>
+		<override org="com.google.api" module="gax-grpc" matcher="exact" rev="1.45.0"/>
+		<override org="com.google.api" module="gax-httpjson" matcher="exact" rev="0.62.0"/>
+		<override org="com.google.api.grpc" module="proto-google-common-protos" matcher="exact" rev="1.16.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-common-protos" matcher="exact" rev="1.16.0"/>
+		<override org="com.google.api.grpc" module="proto-google-iam-v1" matcher="exact" rev="0.12.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-iam-v1" matcher="exact" rev="0.12.0"/>
+		<override org="com.google.cloud" module="google-cloud-asset" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-asset-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-asset-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-asset-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-asset-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-automl" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-automl-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-automl-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-bigtable" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-bigtable-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-bigtable-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-bigtable-admin-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-bigtable-admin-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-bigtable-emulator" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-bigquery" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-bigquerydatatransfer" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-bigquerydatatransfer-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-bigquerydatatransfer-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-bigquerystorage-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-bigquerystorage-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-compute" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-container" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-container-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-container-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-containeranalysis" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-containeranalysis-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-containeranalysis-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-containeranalysis-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-containeranalysis-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-contrib" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-nio" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-core" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-core-grpc" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-core-http" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-datacatalog" matcher="exact" rev="0.8.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-datacatalog-v1beta1" matcher="exact" rev="0.8.0-alpha"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-datacatalog-v1beta1" matcher="exact" rev="0.8.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-datalabeling" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-datalabeling-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-datalabeling-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-dataproc" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-dataproc-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-dataproc-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-dataproc-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-dataproc-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-datastore" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-datastore-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-dlp" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-dlp-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-dlp-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-dialogflow" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-dialogflow-v2beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-dialogflow-v2beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-dialogflow-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-dialogflow-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-dns" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-errorreporting" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-error-reporting-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-error-reporting-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-firestore" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-firestore-admin-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-firestore-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-firestore-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-firestore-admin-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-firestore-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-firestore-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-kms" matcher="exact" rev="1.13.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-kms-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-kms-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-language" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-language-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-language-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-language-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-language-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-logging" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-logging-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-logging-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-logging-logback" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-monitoring" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-monitoring-v3" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-monitoring-v3" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.cloud" module="google-cloud-os-login" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-os-login-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-os-login-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-pubsub" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-pubsub-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-pubsub-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.cloud" module="google-cloud-redis" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-redis-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-redis-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-redis-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-redis-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-resourcemanager" matcher="exact" rev="0.95.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-scheduler" matcher="exact" rev="1.0.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-scheduler-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-scheduler-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-securitycenter" matcher="exact" rev="0.95.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-scheduler-v1" matcher="exact" rev="1.0.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-scheduler-v1" matcher="exact" rev="1.0.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-securitycenter-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-securitycenter-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-securitycenter-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-securitycenter-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-spanner" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-spanner-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-spanner-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-spanner-admin-database-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-spanner-admin-database-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-spanner-admin-instance-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-spanner-admin-instance-v1" matcher="exact" rev="1.22.0"/>
+		<override org="com.google.cloud" module="google-cloud-speech" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-speech-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-speech-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-speech-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-speech-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-speech-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-speech-v1" matcher="exact" rev="1.7.0"/>
+		<override org="com.google.cloud" module="google-cloud-storage" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-tasks" matcher="exact" rev="1.4.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-tasks-v2" matcher="exact" rev="1.4.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-tasks-v2" matcher="exact" rev="1.4.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-tasks-v2beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-tasks-v2beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-tasks-v2beta3" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-tasks-v2beta3" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-texttospeech" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-texttospeech-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-texttospeech-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-texttospeech-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-texttospeech-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-trace" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-trace-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-trace-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-trace-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-trace-v2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-translate-v3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-translate-v3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-translate" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.cloud" module="google-cloud-vision" matcher="exact" rev="1.77.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-vision-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-vision-v1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-vision-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-vision-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-vision-v1p2beta1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-vision-v1p2beta1" matcher="exact" rev="1.59.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-vision-v1p3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-vision-v1p3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-vision-v1p4beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-vision-v1p4beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.cloud" module="google-cloud-video-intelligence" matcher="exact" rev="0.95.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1beta2" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1p1beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1p2beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1p2beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-video-intelligence-v1p3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-video-intelligence-v1p3beta1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-iot-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-iot-v1" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-websecurityscanner-v1alpha" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-websecurityscanner-v1alpha" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-websecurityscanner-v1beta" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-websecurityscanner-v1beta" matcher="exact" rev="0.60.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-iamcredentials-v1" matcher="exact" rev="0.22.0-alpha"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-iamcredentials-v1" matcher="exact" rev="0.22.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-iamcredentials" matcher="exact" rev="0.22.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-talent-v4beta1" matcher="exact" rev="0.12.0-beta"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-talent-v4beta1" matcher="exact" rev="0.12.0-beta"/>
+		<override org="com.google.cloud" module="google-cloud-talent" matcher="exact" rev="0.12.0-beta"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-webrisk-v1beta1" matcher="exact" rev="0.10.0-alpha"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-webrisk-v1beta1" matcher="exact" rev="0.10.0-alpha"/>
+		<override org="com.google.cloud" module="google-cloud-webrisk" matcher="exact" rev="0.10.0-alpha"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-phishingprotection-v1beta1" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-phishingprotection-v1beta1" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.cloud" module="google-cloud-phishingprotection" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.api.grpc" module="proto-google-cloud-recaptchaenterprise-v1beta1" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.api.grpc" module="grpc-google-cloud-recaptchaenterprise-v1beta1" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.cloud" module="google-cloud-recaptchaenterprise" matcher="exact" rev="0.6.0"/>
+		<override org="com.google.http-client" module="google-http-client" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-android" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-apache" matcher="exact" rev="2.1.2"/>
+		<override org="com.google.http-client" module="google-http-client-appengine" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-findbugs" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-gson" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-jackson" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-jackson2" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-protobuf" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-test" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.http-client" module="google-http-client-xml" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client-appengine" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client-assembly" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client-java6" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client-jetty" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.oauth-client" module="google-oauth-client-servlet" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-android" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-appengine" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-assembly" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-gson" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-jackson2" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-java6" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-protobuf" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-servlet" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.api-client" module="google-api-client-xml" matcher="exact" rev="1.29.2"/>
+		<override org="com.google.apis" module="google-api-services-bigquery" matcher="exact" rev="v2-rev20190423-1.28.0"/>
+		<override org="com.google.apis" module="google-api-services-compute" matcher="exact" rev="v1-rev20190403-1.28.0"/>
+		<override org="com.google.cloud.datastore" module="datastore-v1-proto-client" matcher="exact" rev="1.6.0"/>
+		<override org="com.google.apis" module="google-api-services-dns" matcher="exact" rev="v1-rev20190418-1.28.0"/>
+		<override org="org.codehaus.mojo" module="animal-sniffer-annotations" matcher="exact" rev="1.18"/>
+		<override org="commons-fileupload" module="commons-fileupload" matcher="exact" rev="1.4"/>
+		<override org="com.google.apis" module="google-api-services-cloudresourcemanager" matcher="exact" rev="v1-rev20190513-1.28.0"/>
+		<override org="com.google.apis" module="google-api-services-storage" matcher="exact" rev="v1-rev20190426-1.28.0"/>
+		<override org="com.google.apis" module="google-api-services-translate" matcher="exact" rev="v2-rev20170525-1.28.0"/>
+		<override org="com.google.cloud" module="google-cloud-core" matcher="exact" rev="1.77.0"/>
+		<override org="org.json" module="json" matcher="exact" rev="20160810"/>
+		<override org="io.grpc" module="grpc-core" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-netty" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-netty-shaded" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-stub" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-auth" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-protobuf" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-context" matcher="exact" rev="1.21.0"/>
+		<override org="io.grpc" module="grpc-testing" matcher="exact" rev="1.21.0"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.2"/>
+		<override org="com.google.protobuf" module="protobuf-java" matcher="exact" rev="3.7.1"/>
+		<override org="com.google.protobuf" module="protobuf-java-util" matcher="exact" rev="3.7.1"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="27.1-android"/>
+		<override org="com.google.auto.value" module="auto-value" matcher="exact" rev="1.4"/>
+		<override org="com.google.auth" module="google-auth-library-credentials" matcher="exact" rev="0.15.0"/>
+		<override org="com.google.auth" module="google-auth-library-oauth2-http" matcher="exact" rev="0.15.0"/>
+		<override org="io.opencensus" module="opencensus-api" matcher="exact" rev="0.21.0"/>
+		<override org="io.opencensus" module="opencensus-contrib-grpc-util" matcher="exact" rev="0.21.0"/>
+		<override org="io.opencensus" module="opencensus-contrib-http-util" matcher="exact" rev="0.21.0"/>
+		<override org="com.google.guava" module="guava-testlib" matcher="exact" rev="27.1-android"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.hamcrest" module="hamcrest-core" matcher="exact" rev="1.3"/>
+		<override org="com.google.errorprone" module="error_prone_annotations" matcher="exact" rev="2.3.3"/>
+		<override org="org.easymock" module="easymock" matcher="exact" rev="3.6"/>
+		<override org="org.objenesis" module="objenesis" matcher="exact" rev="2.6"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.9.5"/>
+		<override org="com.google.truth" module="truth" matcher="exact" rev="0.45"/>
+		<override org="org.checkerframework" module="checker-compat-qual" matcher="exact" rev="2.5.5"/>
+	</dependencies>
+</ivy-module>

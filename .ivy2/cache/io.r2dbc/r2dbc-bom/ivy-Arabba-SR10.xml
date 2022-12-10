@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.r2dbc"
+		module="r2dbc-bom"
+		revision="Arabba-SR10"
+		status="release"
+		publication="20210514144814"
+	>
+		<license name="Apache License 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="https://github.com/r2dbc/r2dbc-bom">
+		Dependency Management for R2DBC Drivers
+		</description>
+		<m:properties__r2dbc-pool.version>0.8.7.RELEASE</m:properties__r2dbc-pool.version>
+		<m:properties__r2dbc-h2.version>0.8.4.RELEASE</m:properties__r2dbc-h2.version>
+		<m:properties__r2dbc-mariadb.version>1.0.1</m:properties__r2dbc-mariadb.version>
+		<m:properties__r2dbc-mssql.version>0.8.6.RELEASE</m:properties__r2dbc-mssql.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__r2dbc-spi.version>0.8.5.RELEASE</m:properties__r2dbc-spi.version>
+		<m:properties__r2dbc-oracle.version>0.1.0</m:properties__r2dbc-oracle.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__r2dbc-postgresql.version>0.8.8.RELEASE</m:properties__r2dbc-postgresql.version>
+		<m:properties__r2dbc-cloud-spanner.version>0.5.0</m:properties__r2dbc-cloud-spanner.version>
+		<m:properties__r2dbc-mysql.version>0.8.2.RELEASE</m:properties__r2dbc-mysql.version>
+		<m:properties__r2dbc-proxy.version>0.8.6.RELEASE</m:properties__r2dbc-proxy.version>
+		<m:dependency.management__com.google.cloud__cloud-spanner-r2dbc__version>0.5.0</m:dependency.management__com.google.cloud__cloud-spanner-r2dbc__version>
+		<m:dependency.management__com.oracle.database.r2dbc__oracle-r2dbc__version>0.1.0</m:dependency.management__com.oracle.database.r2dbc__oracle-r2dbc__version>
+		<m:dependency.management__io.r2dbc__r2dbc-h2__version>0.8.4.RELEASE</m:dependency.management__io.r2dbc__r2dbc-h2__version>
+		<m:dependency.management__org.mariadb__r2dbc-mariadb__version>1.0.1</m:dependency.management__org.mariadb__r2dbc-mariadb__version>
+		<m:dependency.management__io.r2dbc__r2dbc-mssql__version>0.8.6.RELEASE</m:dependency.management__io.r2dbc__r2dbc-mssql__version>
+		<m:dependency.management__dev.miku__r2dbc-mysql__version>0.8.2.RELEASE</m:dependency.management__dev.miku__r2dbc-mysql__version>
+		<m:dependency.management__io.r2dbc__r2dbc-postgresql__version>0.8.8.RELEASE</m:dependency.management__io.r2dbc__r2dbc-postgresql__version>
+		<m:dependency.management__io.r2dbc__r2dbc-pool__version>0.8.7.RELEASE</m:dependency.management__io.r2dbc__r2dbc-pool__version>
+		<m:dependency.management__io.r2dbc__r2dbc-proxy__version>0.8.6.RELEASE</m:dependency.management__io.r2dbc__r2dbc-proxy__version>
+		<m:dependency.management__io.r2dbc__r2dbc-spi__version>0.8.5.RELEASE</m:dependency.management__io.r2dbc__r2dbc-spi__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

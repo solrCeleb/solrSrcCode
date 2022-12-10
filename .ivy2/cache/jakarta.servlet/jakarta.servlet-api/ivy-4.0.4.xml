@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="jakarta.servlet"
+		module="jakarta.servlet-api"
+		revision="4.0.4"
+		status="release"
+		publication="20200618192835"
+	>
+		<license name="EPL 2.0" url="http://www.eclipse.org/legal/epl-2.0" />
+		<license name="GPL2 w/ CPE" url="https://www.gnu.org/software/classpath/license.html" />
+		<description homepage="https://projects.eclipse.org/projects/ee4j.servlet" />
+		<m:properties__findbugs.exclude>exclude.xml</m:properties__findbugs.exclude>
+		<m:properties__vendor.name>Eclipse Foundation</m:properties__vendor.name>
+		<m:properties__bundle.symbolicName>jakarta.servlet-api</m:properties__bundle.symbolicName>
+		<m:properties__extension.name>javax.servlet</m:properties__extension.name>
+		<m:properties__spec.version>4.0</m:properties__spec.version>
+		<m:properties__implementation.vendor.id>org.eclipse</m:properties__implementation.vendor.id>
+		<m:properties__copyright-plugin.version>1.49</m:properties__copyright-plugin.version>
+		<m:properties__bundle.version>4.0.0</m:properties__bundle.version>
+		<m:properties__findbugs.version>3.0.4</m:properties__findbugs.version>
+		<m:properties__findbugs.threshold>Low</m:properties__findbugs.threshold>
+		<m:properties__doc.title>Jakarta Servlet 4.0 Specification</m:properties__doc.title>
+		<m:properties__window.title>Jakarta Servlet 4.0</m:properties__window.title>
+		<m:properties__release.arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__sonatypeOssDistMgmtStagingUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/staging/</m:properties__sonatypeOssDistMgmtStagingUrl>
+		<m:properties__sonatypeOssDistMgmtNexusUrl>https://jakarta.oss.sonatype.org/</m:properties__sonatypeOssDistMgmtNexusUrl>
+		<m:properties__sonatypeOssDistMgmtReleasesUrl>${sonatypeOssDistMgmtNexusUrl}service/local/staging/deploy/maven2/</m:properties__sonatypeOssDistMgmtReleasesUrl>
+		<m:maven.plugins>null__maven-compiler-plugin__3.1|org.apache.felix__maven-bundle-plugin__4.0.0|org.apache.maven.plugins__maven-jar-plugin__2.4|org.apache.maven.plugins__maven-source-plugin__2.1|org.apache.maven.plugins__maven-javadoc-plugin__3.1.1|org.codehaus.mojo__findbugs-maven-plugin__3.0.4|org.apache.maven.plugins__maven-release-plugin__2.5.3|org.codehaus.mojo__build-helper-maven-plugin__3.0.0</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="jakarta.servlet-api" type="jar" ext="jar" conf="master"/>
+		<artifact name="jakarta.servlet-api" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="jakarta.servlet-api" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+</ivy-module>

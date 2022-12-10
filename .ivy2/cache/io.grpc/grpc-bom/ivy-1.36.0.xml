@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.grpc"
+		module="grpc-bom"
+		revision="1.36.0"
+		status="release"
+		publication="20210223115529"
+	>
+		<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0" />
+		<description homepage="https://github.com/grpc/grpc-java">
+		gRPC: BOM
+		</description>
+		<m:dependency.management__io.grpc__grpc-all__version>1.36.0</m:dependency.management__io.grpc__grpc-all__version>
+		<m:dependency.management__io.grpc__grpc-alts__version>1.36.0</m:dependency.management__io.grpc__grpc-alts__version>
+		<m:dependency.management__io.grpc__grpc-api__version>1.36.0</m:dependency.management__io.grpc__grpc-api__version>
+		<m:dependency.management__io.grpc__grpc-auth__version>1.36.0</m:dependency.management__io.grpc__grpc-auth__version>
+		<m:dependency.management__io.grpc__grpc-benchmarks__version>1.36.0</m:dependency.management__io.grpc__grpc-benchmarks__version>
+		<m:dependency.management__io.grpc__grpc-census__version>1.36.0</m:dependency.management__io.grpc__grpc-census__version>
+		<m:dependency.management__io.grpc__grpc-context__version>1.36.0</m:dependency.management__io.grpc__grpc-context__version>
+		<m:dependency.management__io.grpc__grpc-core__version>1.36.0</m:dependency.management__io.grpc__grpc-core__version>
+		<m:dependency.management__io.grpc__grpc-grpclb__version>1.36.0</m:dependency.management__io.grpc__grpc-grpclb__version>
+		<m:dependency.management__io.grpc__grpc-interop-testing__version>1.36.0</m:dependency.management__io.grpc__grpc-interop-testing__version>
+		<m:dependency.management__io.grpc__grpc-netty__version>1.36.0</m:dependency.management__io.grpc__grpc-netty__version>
+		<m:dependency.management__io.grpc__grpc-netty-shaded__version>1.36.0</m:dependency.management__io.grpc__grpc-netty-shaded__version>
+		<m:dependency.management__io.grpc__grpc-okhttp__version>1.36.0</m:dependency.management__io.grpc__grpc-okhttp__version>
+		<m:dependency.management__io.grpc__grpc-protobuf__version>1.36.0</m:dependency.management__io.grpc__grpc-protobuf__version>
+		<m:dependency.management__io.grpc__grpc-protobuf-lite__version>1.36.0</m:dependency.management__io.grpc__grpc-protobuf-lite__version>
+		<m:dependency.management__io.grpc__grpc-rls__version>1.36.0</m:dependency.management__io.grpc__grpc-rls__version>
+		<m:dependency.management__io.grpc__grpc-services__version>1.36.0</m:dependency.management__io.grpc__grpc-services__version>
+		<m:dependency.management__io.grpc__grpc-stub__version>1.36.0</m:dependency.management__io.grpc__grpc-stub__version>
+		<m:dependency.management__io.grpc__grpc-testing__version>1.36.0</m:dependency.management__io.grpc__grpc-testing__version>
+		<m:dependency.management__io.grpc__grpc-testing-proto__version>1.36.0</m:dependency.management__io.grpc__grpc-testing-proto__version>
+		<m:dependency.management__io.grpc__grpc-xds__version>1.36.0</m:dependency.management__io.grpc__grpc-xds__version>
+		<m:dependency.management__io.grpc__protoc-gen-grpc-java__version>1.36.0</m:dependency.management__io.grpc__protoc-gen-grpc-java__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>
